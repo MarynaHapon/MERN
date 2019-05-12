@@ -2,13 +2,10 @@ const express = require("express");
 const router = express.Router();
 
 /*
-    @route  POST api/auth
-    @desc   Register user
+    @route  GET api/auth
+    @desc   Test route
     @access Public
 */
-router.post("/", (req, res) => {
-  console.log(req.body);
-  res.send("Auth route");
-});
+router.get("/", (req, res) => res.send("Auth route"));
 
 module.exports = router;
