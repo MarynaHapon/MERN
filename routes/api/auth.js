@@ -69,7 +69,7 @@ router.post(
 
 /*
     @route  GET api/auth
-    @desc   Test route
+    @desc   Get all profiles
     @access Public
 */
 router.get("/", auth, async (req, res) => {
